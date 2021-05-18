@@ -1,7 +1,7 @@
 public class PhoneTest {
     public static void main(String[] args) {
-        Galaxy s7 = new Galaxy("S7", 70, "Verizon", "Today is great!");
-        IPhone iphone7 = new IPhone("IPhone7", 90, "AT&T", "Tomorow is always better!");
+        Galaxy s7 = new Galaxy("S7", 70, "Verizon", "Galxy S7 rings: Today is great!");
+        IPhone iphone7 = new IPhone("IPhone7", 90, "AT&T", "IPhone rings: Tomorow is always better!");
         
         s7.displayInfo();
         System.out.println(s7.ring());

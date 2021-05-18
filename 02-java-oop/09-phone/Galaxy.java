@@ -14,12 +14,14 @@ public class Galaxy extends Phone implements Ringable {
 
     @Override
     public void displayInfo() {
-        System.out.printf("Galaxy version: %s" , getVersionNumber());
 
-        System.out.printf("Galaxy battery percentage: %d" , getBatteryPercentage()); 
+        System.out.println("Galaxy " + getVersionNumber() + " from " + getCarrier());
+        // System.out.printf("Galaxy version: %s\n" , getVersionNumber());
 
-        System.out.println("Galaxy carrier: " + getCarrier());
+        // System.out.printf("Galaxy battery percentage: %d\n" , getBatteryPercentage()); 
+
+        // System.out.println("Galaxy carrier: " + getCarrier());
         
-        System.out.println("Galaxy ring tone: " + getRingTone());
+        // System.out.println("Galaxy ring tone: " + getRingTone());
     }
 }
