@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Hello somebody</title>
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
 	<h1>Hello,${name}! !</h1>
