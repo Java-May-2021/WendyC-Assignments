@@ -27,18 +27,28 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/counter_two")
-	public String newCount(HttpSession session) {
-		Integer currentCount = (Integer) session.getAttribute("count");
-		currentCount+=2;
-		
-		session.setAttribute("count", currentCount);
-		return "counter_two.jsp";
-	}
+        public String counterTwo(HttpSession session) {
+			
+			if(session.getAttribute("countTwo") == null)        	
+            session.setAttribute("countTwo", 0);
+	
+			Integer currentCountTwo = (Integer) session.getAttribute("countTwo");
+			currentCountTwo+=2;
+//			currentCountTwo++;
+			session.setAttribute("countTwo", currentCountTwo);
+			return "counter_two.jsp";
+		}
 	// Create a reset button to set the counter back to zero
 	@RequestMapping("/clear")
 	public String clearCount(HttpSession session) {
 		session.setAttribute("count", 0);// Will reset count to 0
-		return "redirect:/counter";
+		return "redirect:/your_server/counter";
+	}
+	
+	@RequestMapping("/clear_two")
+	public String clearCountTwo(HttpSession session) {
+		session.setAttribute("countTwo", 0);// Will reset count to 0
+		return "redirect:/your_server/counter_two";
 	}
 
 }

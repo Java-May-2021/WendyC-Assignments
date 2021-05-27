@@ -11,6 +11,6 @@
 <body>
 	<div class="index">
 	<h1>Welcome User!</h1>
-	<a href="/your_server/counter">Let's start counting</a>
+	<a href="/your_server/counter">counter one</a> <a href="/your_server/counter_two">counter two</a>
 </body>
 </html>

@@ -16,6 +16,6 @@
 			<a href="/your_server">Go Back</a>
 		</fieldset>
 	</div>
-	<a href="/your_server/clear">Clear</a>   <a href="/your_server/counter">Restart</a>
+	<a href="/your_server/clear">Clear</a>   <a href="/your_server/counter">add visits</a>
 </body>
 </html>
